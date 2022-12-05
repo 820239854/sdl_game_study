@@ -1,10 +1,8 @@
-#include "raylib.h"
 #include "Game.h"
-#include "Actor.h"
 
-int main() {
+int main(int argc, char * argv[])
+{
 	Game game;
-	Actor actor(&game);
 	game.Initialize();
 	game.RunLoop();
 	game.Shutdown();
